@@ -243,6 +243,33 @@ class Screen1 extends StatelessWidget {
                 ),
                 child: Text(s3, style: TextStyle(fontSize: 20, fontFamily: "GenSekiGothic2-R",),),
               ),
+              SizedBox(height: 10,),
+              Container(
+                height: 300,
+                width: 250,
+                decoration: BoxDecoration(
+                  border: Border(
+                    top: BorderSide(color: Colors.black54, width:2,),
+                    bottom: BorderSide(color: Colors.black54, width:2,),
+                    left: BorderSide(color: Colors.black26, width:2,),
+                    right: BorderSide(color: Colors.black26, width:2,),
+                  ),
+                  image: DecorationImage(image: AssetImage("assets/c111151116_me.jpg"),fit: BoxFit.fill,),
+                  boxShadow: [
+                    BoxShadow(color: Colors.black, blurRadius: 10,)
+                  ],
+                ),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.black54, width:5,),
+                  boxShadow: [
+                    BoxShadow(color: Colors.white70, )
+                  ],
+                ),
+                child: Text('我的照片',
+                  style: TextStyle(fontSize: 20, fontFamily: "GenSekiGothic2-R",),),
+              ),
               SizedBox(height: 15,),
             ],
           ),
